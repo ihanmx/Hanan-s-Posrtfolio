@@ -1,0 +1,93 @@
+/* Customize Dots */
+.swiper-pagination-bullet {
+  background: #ccc; /* Default dot color */
+  opacity: 1; /* Make dots fully visible */
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--text-color); /* Active dot color (e.g., green) */
+}
+
+/* Customize Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--text-color);
+  font-size: 24px; /* Arrow size */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--text-color); /* Hover color */
+}
+
+.swiper-button-next {
+  right: 10px; /* Adjust position */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Adjust position */
+}
+
+.cardDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  margin: 20px;
+}
+
+.contentDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+.cardImg {
+  width: 70%;
+}
+
+.cardDiv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(225, 225, 225, 0.5); /* Semi-transparent gray */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1; /* Ensure it appears above the card content */
+}
+
+.cardDiv:hover::after {
+  opacity: 1;
+}
+
+.view-more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--title-color);
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 2; /* Ensure it appears above the shadow */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardDiv:hover .view-more {
+  opacity: 1;
+}
