@@ -28,11 +28,11 @@ const Footer = () => {
               Portfolio
             </a>
           </li>{" "}
-          <li>
+          {/* <li>
             <a href="#qualification" className="footer__link">
               Qualification
             </a>
-          </li>
+          </li> */}
         </ul>
         <div className="footer__social">
           <a

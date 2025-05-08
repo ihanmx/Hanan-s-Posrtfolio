@@ -92,15 +92,35 @@ const Qualification = () => {
                 <h3 className="qualification__title">
                   Software Engineering internship
                 </h3>
-                <span className="qualification__subtitle">GPA:4.94/5</span>
+                <span className="qualification__subtitle">Eradah hospital</span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2024 - Present
+                  <i className="uil uil-calendar-alt"></i>2025 - Present
                 </div>
               </div>
 
               <div>
                 <span className="qualification__rounder"></span>
-                {/* <span className="qualification__line"></span> */}
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+
+            <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">
+                  Graduation with first class honors, majoring in software
+                  engineering
+                </h3>
+                <span className="qualification__subtitle">
+                  GPA:4.94 ,Prince Sttam bin Abdulaziz Univercity
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt"></i>2025 - Present
+                </div>
               </div>
             </div>
 
@@ -144,7 +164,7 @@ const Qualification = () => {
               </div>
             </div>
 
-            {/* <div className="qualification__data">
+            <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
@@ -153,14 +173,18 @@ const Qualification = () => {
               <div>
                 <h3 className="qualification__title">
                   {" "}
-                  Graduated from 123 Highschool
+                  Internship isn IT section of Eradah hospital
                 </h3>
-                <span className="qualification__subtitle">GPA:99.92</span>
+                <span className="qualification__subtitle">
+                  UI/UX,Data analysis,technical support
+                </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2020 - Present
+                  <i className="uil uil-calendar-alt"></i>2025 - Present
                 </div>
               </div>
             </div>
+
+            {/* 
 
             <div className="qualification__data">
               <div>

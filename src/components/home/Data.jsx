@@ -57,10 +57,12 @@ const Data = () => {
       </h1>
       <h3 className="home__subtitle">Software Engineer</h3>
       <p className="home__description">
-        Passionate .intersted in building functional, visually appealing web
-        projects , and crafting user-friendly interfaces. I am eager to
-        contribute to meaningful projects and apply my expertise in a dynamic
-        role.
+        Recent Software Engineering graduate with a strong passion for web
+        front-end development and UI/UX design. I thrive on creating
+        user-centered, visually appealing, and highly functional digital
+        experiences. I am eager to apply my technical skills and creativity in a
+        dynamic team environment, continuously learning and pushing the
+        boundaries of great user experiences.
       </p>
 
       <a href="#contact" className="button button--flex">

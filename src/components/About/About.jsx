@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import CV from "../../assets/Hanan-6CV.pdf";
+import CV from "../../assets/HananCv2025.pdf";
 import AboutImg from "../../assets/Frame11.png";
 import Info from "./Info.jsx";
 const About = () => {
@@ -13,14 +13,13 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            I’m a final-year Software Engineering student with a passion for
-            developing websites and interfaces that blend functionality with
-            aesthetics. My expertise lies in Building websites especially{" "}
-            <b>Front-end </b> development also I have good experiance in
-            back-end building ,creating <b>UI/UX</b> user-friendly interfaces
-            ,Provide special user experiance. Driven by a desire to make a
-            difference, I’m eager to contribute to impactful projects and grow
-            within a dynamic and collaborative environment.
+            Interested in developing websites and interfaces that blend
+            functionality with aesthetics. My expertise lies in Building
+            websites especially <b>Front-end </b> development also I have good
+            experiance in back-end building ,creating <b>UI/UX</b> user-friendly
+            interfaces ,Provide special user experiance. Driven by a desire to
+            make a difference, I’m eager to contribute to impactful projects and
+            grow within a dynamic and collaborative environment.
           </p>
 
           <a

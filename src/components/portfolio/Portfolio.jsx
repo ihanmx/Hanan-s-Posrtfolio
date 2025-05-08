@@ -15,6 +15,8 @@ import Procode from "../../assets/ProcodeImg.png";
 import Buggy from "../../assets/Buggy.png";
 import EnviAIDesign from "../../assets/EnviAIDesign.png";
 import DreamSmartWatch from "../../assets/DreamSmartWatch.png";
+import EradahImg from "../../assets/eradahImg.png";
+import KShirt from "../../assets/KShirt.png";
 
 const ResponsiveSwiper = () => {
   const cards = [
@@ -128,6 +130,39 @@ const ResponsiveSwiper = () => {
       id: 1,
       content: (
         <div className="contentDiv">
+          <h3>K-shirt</h3>
+          <p>Children clothes store UI/UX </p>
+          <img className="cardImg" src={KShirt} />
+          <a
+            href="https://www.figma.com/proto/PuUanvKKEz0A2en0Ry6qbS/K-shirt?page-id=140%3A1477&node-id=146-3575&viewport=734%2C127%2C0.04&t=XxmrM9lo7KuFsAHZ-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=146%3A3575"
+            class="view-more"
+          >
+            View More
+          </a>
+        </div>
+      ),
+    },
+    {
+      id: 2,
+      content: (
+        <div className="contentDiv">
+          <h3>Eradah hospital UI/UX project</h3>
+          <p>applecation's user interfaces improvement </p>
+          <img className="cardImg" src={EradahImg} />
+          <a
+            href="https://www.figma.com/proto/WwHe63LFpi0MVDowh4KvQ0/Eradah-internship?page-id=2%3A2&node-id=161-2545&p=f&viewport=-25%2C-3816%2C0.05&t=ZlJUH4FWKm1Wekk8-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=161%3A2545"
+            class="view-more"
+          >
+            View More
+          </a>
+        </div>
+      ),
+    },
+
+    {
+      id: 3,
+      content: (
+        <div className="contentDiv">
           <h3>Buggy</h3>
           <p>UI/UX of responsive bugs solving website </p>
           <img className="cardImg" src={Buggy} />
@@ -141,7 +176,7 @@ const ResponsiveSwiper = () => {
       ),
     },
     {
-      id: 2,
+      id: 4,
       content: (
         <div className="contentDiv">
           <h3>EnviAI</h3>
@@ -158,7 +193,7 @@ const ResponsiveSwiper = () => {
     },
 
     {
-      id: 3,
+      id: 5,
       content: (
         <div className="contentDiv">
           <h3>Dream Smartwatch</h3>
