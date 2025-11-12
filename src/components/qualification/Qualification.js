@@ -1,228 +1,91 @@
 import React, { useState } from "react";
 import "./qualification.css";
 
-const Qualification = () => {
-  const [toggleState, setToggleState] = useState(1);
+const qualifications = {
+  education: [
+    {
+      title: "Bachelor's degree in Software Engineering",
+      subtitle: "Prince Sattam bin Abdulaziz University — GPA: 4.94/5",
+      date: "2021 – 2025",
+    },
+    {
+      title: "Graduated from 123 Highschool",
+      subtitle: "GPA: 99.92",
+      date: "2020 – 2021",
+    },
+  ],
+  experience: [
+    {
+      title: "Full-Stack Developer Internship",
+      subtitle:
+        "PERN Stack (PostgreSQL, Express.js, React.js, Node.js, APIs, mailing & payment services)",
+      date: "Sep 2025 – Present",
+    },
+    {
+      title: "IT Internship — Eradah Hospital",
+      subtitle: "UI/UX, Data Analysis, Technical Support",
+      date: "Jan 2025 – Mar 2025",
+    },
+    {
+      title: "Graduation Project",
+      subtitle: "Developed EnviAI full-stack web application",
+      date: "2024",
+    },
+  ],
+};
 
-  const toggleTab = (index) => {
-    setToggleState(index);
-  };
+const Qualification = () => {
+  const [tab, setTab] = useState("education");
+
   return (
     <section className="qualification section" id="qualification">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personal journey</span>
 
-      <div className="qualification__container container">
-        <div className="qualification__tabs">
+      {/* Tabs */}
+      <div className="qualification__tabs">
+        <button
+          className={`qualification__tab ${
+            tab === "education" ? "active" : ""
+          }`}
+          onClick={() => setTab("education")}
+        >
+          <i className="uil uil-graduation-cap"></i> Education
+        </button>
+        <button
+          className={`qualification__tab ${
+            tab === "experience" ? "active" : ""
+          }`}
+          onClick={() => setTab("experience")}
+        >
+          <i className="uil uil-briefcase-alt"></i> Experience
+        </button>
+      </div>
+
+      {/* Timeline */}
+      <div className="qualification__timeline">
+        {qualifications[tab].map((item, index) => (
           <div
-            className={
-              toggleState === 1
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
-            }
-            onClick={() => {
-              toggleTab(1);
-            }}
+            key={index}
+            className={`qualification__data ${
+              index % 2 === 0 ? "left" : "right"
+            }`}
           >
-            <i className="uil uil-graduation-cap qualification-icon"></i>
-            Education
+            <div className="qualification__content">
+              <h3 className="qualification__title">{item.title}</h3>
+              <span className="qualification__subtitle">{item.subtitle}</span>
+              <div className="qualification__calendar">
+                <i className="uil uil-calendar-alt"></i> {item.date}
+              </div>
+            </div>
+            <div className="qualification__line-wrapper">
+              <span className="qualification__rounder"></span>
+              {index !== qualifications[tab].length - 1 && (
+                <span className="qualification__line"></span>
+              )}
+            </div>
           </div>
-
-          <div
-            className={
-              toggleState === 2
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
-            }
-            onClick={() => {
-              toggleTab(2);
-            }}
-          >
-            <i className="uil uil-briefcase-alt qualification-icon"></i>
-            Experience
-          </div>
-        </div>
-
-        <div className="qualification__sections">
-          <div
-            className={
-              toggleState === 1
-                ? "qualification__content qualification__content-active"
-                : "qualification__content"
-            }
-          >
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">
-                  Graduated from 123 Highschool
-                </h3>
-                <span className="qualification__subtitle">GPA:99.92</span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2020 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">
-                  Software Engineering Studing in PSAU
-                </h3>
-                <span className="qualification__subtitle">
-                  Prince Sttam bin Abdulaziz Univercity
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
-                </div>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">
-                  Software Engineering internship
-                </h3>
-                <span className="qualification__subtitle">Eradah hospital</span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2025 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">
-                  Graduation with first class honors, majoring in software
-                  engineering
-                </h3>
-                <span className="qualification__subtitle">
-                  GPA:4.94 ,Prince Sttam bin Abdulaziz Univercity
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2025 - Present
-                </div>
-              </div>
-            </div>
-
-            {/* <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">UX Expert</h3>
-                <span className="qualification__subtitle">sssssssss</span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
-                </div>
-              </div>
-            </div> */}
-          </div>
-
-          <div
-            className={
-              toggleState === 2
-                ? "qualification__content qualification__content-active"
-                : "qualification__content"
-            }
-          >
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Graduation project</h3>
-                <span className="qualification__subtitle"></span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2024
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">
-                  {" "}
-                  Internship isn IT section of Eradah hospital
-                </h3>
-                <span className="qualification__subtitle">
-                  UI/UX,Data analysis,technical support
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 1-2025 to 3-2025
-                </div>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">
-                  Full-Stack developer internship
-                </h3>
-                <span className="qualification__subtitle">
-                  PERN developer PostgreSQL,Express.js,
-                  <br />
-                  React.js,Node.js,APIs,
-                  <br />
-                  mailing &payment services
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 9-2025 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            {/* 
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Web Designer</h3>
-                <span className="qualification__subtitle">sssssssss</span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div> */}
-            {/* </div> */}
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
