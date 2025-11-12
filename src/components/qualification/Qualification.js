@@ -149,12 +149,10 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">
-                  Software Engineering internship
-                </h3>
+                <h3 className="qualification__title">Graduation project</h3>
                 <span className="qualification__subtitle"></span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2024 - Present
+                  <i className="uil uil-calendar-alt"></i>2024
                 </div>
               </div>
 
@@ -179,8 +177,31 @@ const Qualification = () => {
                   UI/UX,Data analysis,technical support
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2025 - Present
+                  <i className="uil uil-calendar-alt"></i> 1-2025 to 3-2025
                 </div>
+              </div>
+            </div>
+
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">
+                  Full-Stack developer internship
+                </h3>
+                <span className="qualification__subtitle">
+                  PERN developer PostgreSQL,Express.js,
+                  <br />
+                  React.js,Node.js,APIs,
+                  <br />
+                  mailing &payment services
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt"></i> 9-2025 - Present
+                </div>
+              </div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
               </div>
             </div>
 

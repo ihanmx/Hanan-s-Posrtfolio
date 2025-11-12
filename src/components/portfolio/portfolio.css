@@ -53,6 +53,9 @@
 }
 .cardImg {
   width: 70%;
+  height: 200px; /* or any consistent height */
+  object-fit: cover; /* maintains aspect ratio, crops excess */
+  border-radius: 10px; /* optional */
 }
 
 .cardDiv::after {

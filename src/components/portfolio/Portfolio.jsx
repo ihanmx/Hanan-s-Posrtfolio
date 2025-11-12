@@ -17,9 +17,21 @@ import EnviAIDesign from "../../assets/EnviAIDesign.png";
 import DreamSmartWatch from "../../assets/DreamSmartWatch.png";
 import EradahImg from "../../assets/eradahImg.png";
 import KShirt from "../../assets/KShirt.png";
+import dhallaty from "../../assets/dhallaty.png";
 
 const ResponsiveSwiper = () => {
   const cards = [
+    {
+      id: 1,
+      content: (
+        <div className="contentDiv">
+          <h3>Dhallaty</h3>
+          <p> Lost & Found Services website (In Progress)</p>
+          <img className="cardImg" src={dhallaty} />
+          <a class="view-more">In progress (details still private)</a>
+        </div>
+      ),
+    },
     {
       id: 1,
       content: (
