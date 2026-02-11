@@ -39,22 +39,25 @@ const Footer = () => {
             href="https://github.com/ihanmx"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
-            <i class="uil uil-github"></i>
+            <i className="uil uil-github"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/hanan-biazid-4a4487252/details/projects/"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
-            <i class="uil uil-linkedin"></i>
+            <i className="uil uil-linkedin"></i>
           </a>
           <a
             href="mailto:hanan.bayazeed56@gmail.com"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
-            <i class="uil uil-envelope-alt"></i>
+            <i className="uil uil-envelope-alt"></i>
           </a>
         </div>
 

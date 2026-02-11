@@ -29,8 +29,8 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>Dhallaty</h3>
           <p> Lost & Found Services website (In Progress)</p>
-          <img className="cardImg" src={dhallaty} />
-          <a class="view-more">In progress (details still private)</a>
+          <img className="cardImg" src={dhallaty} alt="Dhallaty project" />
+          <a className="view-more" href="#portfolio">In progress (details still private)</a>
         </div>
       ),
     },
@@ -44,8 +44,8 @@ const ResponsiveSwiper = () => {
             MongoDB, Express, React, and Node.js,Authentication, role-based
             access control,Token-management
           </p>
-          <img className="cardImg" src={mern} />
-          <a class="view-more">In progress (details still private)</a>
+          <img className="cardImg" src={mern} alt="MERN Authentication project" />
+          <a className="view-more" href="#portfolio">In progress (details still private)</a>
         </div>
       ),
     },
@@ -55,10 +55,10 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>E-store-backend(in progress)</h3>
           <p> MVC,dynamicRouoting,MySQL,Sequelize,MongooD b,Mongoose</p>
-          <img className="cardImg" src={estore} />
+          <img className="cardImg" src={estore} alt="E-store backend project" />
           <a
             href="https://github.com/ihanmx/MERN_Authentication_Authorization"
-            class="view-more"
+            className="view-more"
           >
             View More
           </a>
@@ -71,10 +71,10 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>EnviAI</h3>
           <p>React.js,MUI,Firebase,Fabric.js,APIs</p>
-          <img className="cardImg" src={enviAI} />
+          <img className="cardImg" src={enviAI} alt="EnviAI project" />
           <a
             href="https://drive.google.com/file/d/1C-pjiTBBXGcIwzQB6Aay8KuzFL_SCNhe/view?usp=sharing"
-            class="view-more"
+            className="view-more"
           >
             View More
           </a>
@@ -104,8 +104,8 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3> React To-Do List </h3>
           <p>Hooks,contextProviders-States-CRUD</p>
-          <img className="cardImg" src={toDoList} />
-          <a href="https://hanan-to-do-list.netlify.app/" class="view-more">
+          <img className="cardImg" src={toDoList} alt="React To-Do List project" />
+          <a href="https://hanan-to-do-list.netlify.app/" className="view-more">
             View More
           </a>
         </div>
@@ -133,8 +133,8 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3> React Wheather App</h3>
           <p>API,Redux,Reducers</p>
-          <img className="cardImg" src={Weather} />
-          <a href="https://weather-app-byhanan.netlify.app/" class="view-more">
+          <img className="cardImg" src={Weather} alt="React Weather App project" />
+          <a href="https://weather-app-byhanan.netlify.app/" className="view-more">
             View More
           </a>
         </div>
@@ -177,10 +177,10 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>K-shirt</h3>
           <p>Children clothes store UI/UX </p>
-          <img className="cardImg" src={KShirt} />
+          <img className="cardImg" src={KShirt} alt="K-shirt design project" />
           <a
             href="https://www.figma.com/proto/PuUanvKKEz0A2en0Ry6qbS/K-shirt?page-id=140%3A1477&node-id=146-3575&viewport=734%2C127%2C0.04&t=XxmrM9lo7KuFsAHZ-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=146%3A3575"
-            class="view-more"
+            className="view-more"
           >
             View More
           </a>
@@ -193,10 +193,10 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>Eradah hospital UI/UX project</h3>
           <p>applecation's user interfaces improvement </p>
-          <img className="cardImg" src={EradahImg} />
+          <img className="cardImg" src={EradahImg} alt="Eradah hospital UI/UX project" />
           <a
             href="https://www.figma.com/proto/WwHe63LFpi0MVDowh4KvQ0/Eradah-internship?page-id=2%3A2&node-id=161-2545&p=f&viewport=-25%2C-3816%2C0.05&t=ZlJUH4FWKm1Wekk8-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=161%3A2545"
-            class="view-more"
+            className="view-more"
           >
             View More
           </a>
@@ -210,10 +210,10 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>Buggy</h3>
           <p>UI/UX of responsive bugs solving website </p>
-          <img className="cardImg" src={Buggy} />
+          <img className="cardImg" src={Buggy} alt="Buggy design project" />
           <a
             href="https://docs.google.com/presentation/d/1n8WnPFHtVOg2kX6ytOGp5qVrrFY9P93znWr7UlQGUhE/edit?usp=sharing"
-            class="view-more"
+            className="view-more"
           >
             View More
           </a>
@@ -226,10 +226,10 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>EnviAI</h3>
           <p>UI/UX of products Designing wepsite</p>
-          <img className="cardImg" src={EnviAIDesign} />
+          <img className="cardImg" src={EnviAIDesign} alt="EnviAI design project" />
           <a
             href="https://drive.google.com/file/d/1KEKAkE0DSTTNa7uikysaEOtdnEymo7I4/view?usp=sharing"
-            class="view-more"
+            className="view-more"
           >
             View More
           </a>
@@ -243,10 +243,10 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>Dream Smartwatch</h3>
           <p>UI/UX Mobile & Desktop smartwatch store website</p>
-          <img className="cardImg" src={DreamSmartWatch} />
+          <img className="cardImg" src={DreamSmartWatch} alt="Dream Smartwatch design project" />
           <a
             href="https://drive.google.com/file/d/1y3eDFlcYFcrqB-9yOhAE826ne-xuCIYi/view?usp=sharing"
-            class="view-more"
+            className="view-more"
           >
             View More
           </a>
