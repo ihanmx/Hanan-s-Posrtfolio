@@ -1,0 +1,119 @@
+.qualification {
+  padding: 2rem 0;
+}
+
+.qualification__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.qualification__tab {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.qualification__tab.active {
+  color: var(--title-color);
+  border-bottom: 2px solid var(--title-color);
+}
+
+/* Timeline Layout */
+.qualification__timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  width: 80%;
+}
+
+.qualification__data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.qualification__data.right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.qualification__content {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.qualification__line-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  position: relative;
+}
+
+.qualification__rounder {
+  width: 13px;
+  height: 13px;
+  background: var(--title-color);
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.qualification__line {
+  width: 2px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Titles */
+.qualification__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+.qualification__subtitle {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.qualification__calendar {
+  font-size: 0.85rem;
+  color: var(--text-color);
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .qualification__data,
+  .qualification__data.right {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .qualification__line-wrapper {
+    display: none;
+  }
+
+  .qualification__content {
+    width: 100%;
+  }
+}
