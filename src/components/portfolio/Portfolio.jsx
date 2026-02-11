@@ -6,12 +6,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./portfolio.css";
 import enviAI from "../../assets/enviAI.png";
-import DSC from "../../assets/DSC.png";
 import toDoList from "../../assets/toDolist.png";
 import Weather from "../../assets/Weather.png";
-import RouteMate from "../../assets/RouteMate.png";
-import LemonSlice from "../../assets/lemon-sliceImg.png";
-import Procode from "../../assets/ProcodeImg.png";
 import Buggy from "../../assets/Buggy.png";
 import EnviAIDesign from "../../assets/EnviAIDesign.png";
 import DreamSmartWatch from "../../assets/DreamSmartWatch.png";
@@ -30,7 +26,9 @@ const ResponsiveSwiper = () => {
           <h3>Dhallaty</h3>
           <p> Lost & Found Services website (In Progress)</p>
           <img className="cardImg" src={dhallaty} alt="Dhallaty project" />
-          <a className="view-more" href="#portfolio">In progress (details still private)</a>
+          <a className="view-more" href="#portfolio">
+            In progress (details still private)
+          </a>
         </div>
       ),
     },
@@ -44,8 +42,14 @@ const ResponsiveSwiper = () => {
             MongoDB, Express, React, and Node.js,Authentication, role-based
             access control,Token-management
           </p>
-          <img className="cardImg" src={mern} alt="MERN Authentication project" />
-          <a className="view-more" href="#portfolio">In progress (details still private)</a>
+          <img
+            className="cardImg"
+            src={mern}
+            alt="MERN Authentication project"
+          />
+          <a className="view-more" href="#portfolio">
+            In progress (details still private)
+          </a>
         </div>
       ),
     },
@@ -104,7 +108,11 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3> React To-Do List </h3>
           <p>Hooks,contextProviders-States-CRUD</p>
-          <img className="cardImg" src={toDoList} alt="React To-Do List project" />
+          <img
+            className="cardImg"
+            src={toDoList}
+            alt="React To-Do List project"
+          />
           <a href="https://hanan-to-do-list.netlify.app/" className="view-more">
             View More
           </a>
@@ -133,8 +141,15 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3> React Wheather App</h3>
           <p>API,Redux,Reducers</p>
-          <img className="cardImg" src={Weather} alt="React Weather App project" />
-          <a href="https://weather-app-byhanan.netlify.app/" className="view-more">
+          <img
+            className="cardImg"
+            src={Weather}
+            alt="React Weather App project"
+          />
+          <a
+            href="https://weather-app-byhanan.netlify.app/"
+            className="view-more"
+          >
             View More
           </a>
         </div>
@@ -193,7 +208,11 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>Eradah hospital UI/UX project</h3>
           <p>applecation's user interfaces improvement </p>
-          <img className="cardImg" src={EradahImg} alt="Eradah hospital UI/UX project" />
+          <img
+            className="cardImg"
+            src={EradahImg}
+            alt="Eradah hospital UI/UX project"
+          />
           <a
             href="https://www.figma.com/proto/WwHe63LFpi0MVDowh4KvQ0/Eradah-internship?page-id=2%3A2&node-id=161-2545&p=f&viewport=-25%2C-3816%2C0.05&t=ZlJUH4FWKm1Wekk8-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=161%3A2545"
             className="view-more"
@@ -226,7 +245,11 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>EnviAI</h3>
           <p>UI/UX of products Designing wepsite</p>
-          <img className="cardImg" src={EnviAIDesign} alt="EnviAI design project" />
+          <img
+            className="cardImg"
+            src={EnviAIDesign}
+            alt="EnviAI design project"
+          />
           <a
             href="https://drive.google.com/file/d/1KEKAkE0DSTTNa7uikysaEOtdnEymo7I4/view?usp=sharing"
             className="view-more"
@@ -243,7 +266,11 @@ const ResponsiveSwiper = () => {
         <div className="contentDiv">
           <h3>Dream Smartwatch</h3>
           <p>UI/UX Mobile & Desktop smartwatch store website</p>
-          <img className="cardImg" src={DreamSmartWatch} alt="Dream Smartwatch design project" />
+          <img
+            className="cardImg"
+            src={DreamSmartWatch}
+            alt="Dream Smartwatch design project"
+          />
           <a
             href="https://drive.google.com/file/d/1y3eDFlcYFcrqB-9yOhAE826ne-xuCIYi/view?usp=sharing"
             className="view-more"
