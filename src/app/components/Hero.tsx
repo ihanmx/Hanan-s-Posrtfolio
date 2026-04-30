@@ -22,13 +22,13 @@ export function Hero() {
       <WaveAnimation />
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center ">
           {/* Left Side - Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6"
+            className="space-y-6 order-2 md:order-1"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -71,12 +71,11 @@ export function Hero() {
               transition={{ delay: 0.4 }}
               className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
             >
-              Recent Software Engineering graduate with a strong passion for web
-              full-stack development and UI/UX design. I thrive on creating
-              user-centered, visually appealing, and highly functional digital
-              experiences. I am eager to apply my technical skills and
-              creativity in a dynamic team environment, continuously learning
-              and pushing the boundaries of great user experiences.
+              Software Engineer with a strong focus on full-stack web
+              development and UI/UX design. Skilled in creating scalable,
+              user-centered applications that combine functionality with clean,
+              modern design. Eager to contribute technical expertise and
+              creative problem-solving in a dynamic, team-driven environment.
             </motion.p>
 
             <motion.div
@@ -109,7 +108,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center relative"
+            className="flex justify-center relative order-1 md:order-2"
           >
             <div className="relative">
               {/* Animated Rings */}
