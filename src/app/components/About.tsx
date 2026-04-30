@@ -5,11 +5,11 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 export function About() {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "#";
-    link.download = "CV.pdf";
-    alert(
-      "CV download functionality would be implemented here. Please add your actual CV PDF file.",
-    );
+    link.href = "/cv.pdf";
+    link.download = "Hanan_Biazid_CV.pdf"; // اسم الملف عند التحميل
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
