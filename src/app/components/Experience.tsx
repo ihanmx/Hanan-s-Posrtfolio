@@ -11,22 +11,7 @@ export function Experience() {
     //     "Leading the frontend team in building scalable web applications using React and TypeScript. Implemented design system and improved performance by 40%.",
     //   skills: ["React", "TypeScript", "Next.js", "Team Leadership"],
     // },
-    {
-      title: "Full-stack Developer Internship",
-      company: "Dhallaty",
-      period: "Sep 2025 - present",
-      description:
-        "Full-stack developer of Dhallaty platform for lost & found tech services using PERN stack",
-      skills: [
-        "React",
-        "Express",
-        "PostgreSQL",
-        "Full-satck dev",
-        "Notion",
-        "Tech-lead",
-        "admin dashboards",
-      ],
-    },
+
     {
       title: "Front-end Developer Internship",
       company: "Afaaqware",
@@ -41,6 +26,33 @@ export function Experience() {
         "Nextjs",
         "Tailwind",
         "Professional Architecture",
+        "React queries",
+        "TypeScript",
+        "i18n Next",
+        "light and dark themes",
+      ],
+    },
+
+    {
+      title: "Full-stack Developer Internship",
+      company: "Dhallaty",
+      period: "Sep 2025 - march 2026",
+      description:
+        "Full-stack developer of Dhallaty platform for lost & found tech services using PERN stack",
+      skills: [
+        "React",
+        "Express",
+        "PostgreSQL",
+        "Full-satck dev",
+        "Notion",
+        "Tech-lead",
+        "admin dashboards",
+        "Mailing service",
+        "MUI",
+        "pm2",
+        "nginx",
+        "linux (Ubuntu)",
+        "SSH",
       ],
     },
 
